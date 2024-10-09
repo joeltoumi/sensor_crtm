@@ -11,9 +11,5 @@
         "error": {
             "stop_exists": "This stop number is already registered"
         }
-    },
-    "sensor": {
-        "next_arrival": "Next arrival",
-        "routes": "Routes"
     }
 }

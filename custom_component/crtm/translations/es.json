@@ -11,9 +11,5 @@
         "error": {
             "stop_exists": "Ya existe una entrada con este número de parada."
         }
-    },
-    "sensor": {
-        "next_arrival": "Próxima llegada",
-        "routes": "Rutas"
     }
 }

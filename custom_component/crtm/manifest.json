@@ -1,5 +1,5 @@
 {
-  "domain": "crtm_bus_stop_integration",
+  "domain": "crtm",
   "name": "CRTM Integration",
   "version": "1.0",
   "config_flow": true,
