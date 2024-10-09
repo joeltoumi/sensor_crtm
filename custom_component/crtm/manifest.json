@@ -1,11 +1,12 @@
 {
   "domain": "crtm",
   "name": "CRTM Integration",
-  "version": "1.0",
+  "codeowners": ["@joeltoumi"],
   "config_flow": true,
-  "documentation": "https://github.com/joeltoumi/sensor.crtm#readme",
-  "requirements": [],
   "dependencies": [],
+  "documentation": "https://github.com/joeltoumi/sensor.crtm#readme",
   "iot_class": "cloud_polling",
-  "codeowners": ["@joeltoumi"]
+  "issue_tracker": "https://github.com/joeltoumi/sensor.crtm/issues",
+  "requirements": [],
+  "version": "1.0"
 }
