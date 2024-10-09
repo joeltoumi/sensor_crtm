@@ -70,7 +70,7 @@ stop_name: Nombre personalizado
 
 Después de la instalación, la tarjeta debería verse de la siguiente manera:
 
-
+![image](https://raw.githubusercontent.com/joeltoumi/sensor_crtm/f5d1b4e463a4e1128b87cefb50fd7839982107af/card.png)
 
 [paypalme]: https://www.paypal.me/joelruiz
 [paypalbedge]: https://camo.githubusercontent.com/3073969b3e2923ae564193fabf646ce6a85329cd39cbdfd3fa4d814cb5b48e92/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465
