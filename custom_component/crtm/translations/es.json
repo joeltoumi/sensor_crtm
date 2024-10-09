@@ -1,0 +1,19 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "description": "Busca aquí el número de tu parada de autobús: https://busmadrid.welbits.com/buscar-parada/mapa",
+                "data": {
+                    "stop_number": "Número de Parada"
+                }
+            }
+        },
+        "error": {
+            "stop_exists": "Ya existe una entrada con este número de parada."
+        }
+    },
+    "sensor": {
+        "next_arrival": "Próxima llegada",
+        "routes": "Rutas"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "description": "Get here your bus stop number: https://busmadrid.welbits.com/buscar-parada/mapa",
+                "data": {
+                    "stop_number": "Stop number"
+                }
+            }
+        },
+        "error": {
+            "stop_exists": "This stop number is already registered"
+        }
+    },
+    "sensor": {
+        "next_arrival": "Next arrival",
+        "routes": "Routes"
+    }
+}
