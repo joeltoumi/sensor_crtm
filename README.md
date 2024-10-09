@@ -1,4 +1,4 @@
-![hacs_badge](https://img.shields.io/badge/hacs-custom-orange.svg) [![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
+![hacs_badge](https://img.shields.io/badge/hacs-custom-orange.svg)  [![Paypal.me][paypalbedge]][paypalme] [![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
 
 # CRTM - Home Assistant
 
@@ -34,41 +34,43 @@ Añadir CRTM a tu instalación de Home Assistant puede hacerse vía UI usando es
 
 Si el botón superior no funciona, también puedes añadirlo siguiendo estos pasos:
 
-- Navigate to your Home Assistant instance.
-- In the sidebar, click Settings.
-- From the Setup menu, select: Devices & Services.
-- In the lower right corner, click the Add integration button.
-- In the list, search and select `Epic Games`.
-- Follow the on-screen instructions to complete the setup.
+- Navega a tu instancia de Home Assistant.
+- En la barra lateral, click en Ajustes.
+- En el menú de configuración, selecciona: Dispositivos y Servicios.
+- En la esquina inferior derecha, click en Añadir integración.
+- En la lista, busca y selecciona `CRTM Integration`.
+- Sigue las instrucciones de la pantalla para completar la configuración.
 
 ## Debugging
 
-To enable debug for Epic Games integration, add following to your `configuration.yaml`:
+Para habilitar el debug para la integración de CRTM, añade lo siguiente a tu `configuration.yaml`:
 
 ```yaml
 logger:
   default: info
   logs:
-    custom_components.epic_games: debug
+    custom_components.crtm: debug
 ```
 
-## Make a card
+## Crea una tarjeta
 
-To view Epic Games information, follow an example of a card. Remember to install the [upcoming-media-card](https://github.com/NemesisRE/upcoming-media-card)
+Esta integración requiere instalar [bus-stop-card](https://github.com/joeltoumi/bus-stop-card)
 
 ```yaml
-type: custom:upcoming-media-card
-entity: sensor.epic_games
-title: Epic Games
-max: 10
-image_style: fanart
-date: ddmm
-line1_text: "Metacritic: $rating"
+type: custom:bus-stop-card
+entity: sensor.bus_stop_11582
+stop_name: Nombre personalizado
 ```
+| Parámetros  | Type     | Descripción                                                                                                                |
+|:------------| :------- |:---------------------------------------------------------------------------------------------------------------------------|
+| `type`      | `string` | **Requerido**. Tipo de la tarjeta                                                                                          |
+| `entity`    | `string` | **Requerido**. Entidad de la integración CRTM                                                                              |
+| `stop_name` | `string` | **Opcional**. Nombre personalizado de la parada de bus. <br/>Si no se indica se mostrará el número de parada en el nombre. |
 
-After setup, the card above will look like this:
 
-![image](https://github.com/hudsonbrendon/ha_epic_games/assets/5201888/8aef226f-bae3-48f4-82b1-2d09b1990e2d)
+Después de la instalación, la tarjeta debería verse de la siguiente manera:
 
-[buymecoffee]: https://www.buymeacoffee.com/hudsonbrendon
-[buymecoffeebedge]: https://camo.githubusercontent.com/cd005dca0ef55d7725912ec03a936d3a7c8de5b5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6275792532306d6525323061253230636f666665652d646f6e6174652d79656c6c6f772e737667
+
+
+[paypalme]: https://www.paypal.me/joelruiz
+[paypalbedge]: https://camo.githubusercontent.com/3073969b3e2923ae564193fabf646ce6a85329cd39cbdfd3fa4d814cb5b48e92/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465
