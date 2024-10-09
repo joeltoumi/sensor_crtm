@@ -58,7 +58,7 @@ Esta integración requiere instalar [bus-stop-card](https://github.com/joeltoumi
 
 ```yaml
 type: custom:bus-stop-card
-entity: sensor.bus_stop_11582
+entity: sensor.bus_stop_08366
 stop_name: Nombre personalizado
 ```
 | Parámetros  | Type     | Descripción                                                                                                                |
