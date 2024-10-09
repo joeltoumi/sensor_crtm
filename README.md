@@ -54,11 +54,11 @@ logger:
 
 ## Crea una tarjeta
 
-Esta integración requiere instalar [bus-stop-card](https://github.com/joeltoumi/bus-stop-card)
+Esta integración requiere instalar [crtm-mobility-card](https://github.com/joeltoumi/crtm-mobility-card)
 
 ```yaml
-type: custom:bus-stop-card
-entity: sensor.bus_stop_08366
+type: custom:crtm-mobility-card
+entity: sensor.crtm_stop_XXXX
 stop_name: Nombre personalizado
 ```
 | Parámetros  | Type     | Descripción                                                                                                                |

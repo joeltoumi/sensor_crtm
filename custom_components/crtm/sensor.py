@@ -17,15 +17,15 @@ async def async_setup_entry(hass, config_entry, async_add_entities) -> None:
     config = hass.data[DOMAIN][config_entry.entry_id]
     stop_number = config[CONF_STOP_NUMBER]
     sensors = [
-        BusStopSensor(
+        CrtmStopSensor(
             stop_number=stop_number
         )
     ]
     async_add_entities(sensors, update_before_add=True)
 
 
-class BusStopSensor(SensorEntity):
-    """Representation of a bus stop sensor."""
+class CrtmStopSensor(SensorEntity):
+    """Representation of a crtm stop sensor."""
 
     UPDATE_INTERVAL = timedelta(minutes=3)
 
@@ -45,7 +45,7 @@ class BusStopSensor(SensorEntity):
     @property
     def name(self):
         """Return the name of the sensor."""
-        return f"Bus stop {self._stop_number}"
+        return f"CRTM Stop {self._stop_number}"
 
     @property
     def state(self) -> str:
